@@ -13,14 +13,14 @@ Window 2 - Run Kafka Service (keep window open)
 ```
 Window 3 - Create a topic to store your events 
 ```
-.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic bearcat-messages
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic sunny-messages
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
 ```
 Window 4 - Run Kafka Producer (will provide a > prompt for writing messages)
 ```
-.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic bearcat-messages
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic sunny-messages
 ```
 Window 5 - Run Kafka Consumer (to show messages from the beginning)
 ```
-.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic bearcat-messages --from-beginning
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic sunny-messages --from-beginning
 ```
